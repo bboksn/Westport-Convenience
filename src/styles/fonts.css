@@ -1,0 +1,4 @@
+@font-face {
+    font-family: 'cool';
+    src: local('cool'), url(../../public/YoutubeStrikes.ttf) format('opentype');
+  }
