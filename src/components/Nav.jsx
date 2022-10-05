@@ -1,6 +1,6 @@
 import {React,useState} from 'react'
-import { GiHamburgerMenu } from "react-icons/gi";
-import {RiCloseFill} from 'react-icons/ri'
+import { GiHamburgerMenu} from "react-icons/gi";
+import {RiCloseFill,RiInstagramLine} from 'react-icons/ri'
 import '../styles/fonts.css'
 export default function Nav() {
   const [nav,setNav] = useState(false);
@@ -15,15 +15,17 @@ export default function Nav() {
       <a className='p-4' href="/">Home</a>
       <a className='p-4' href="/gallery">Gallery</a>
       <a  className='p-4' href="/">About</a>
+      <a  className='p-4' href="https://www.instagram.com/westport_convenience/" target="_blank"><RiInstagramLine size={30}></RiInstagramLine></a>
       </div>  
       {/* vvv small screen nav*/}
       {!nav?<button onClick={handleNav} className='md:hidden'><GiHamburgerMenu size={50}></GiHamburgerMenu></button>:<button onClick={handleNav} className='md:hidden'><RiCloseFill color={'white'} size={60}></RiCloseFill></button>}
       
     </div>  
-    <div className={nav?'text-black h-72 bg-[#e0dedb10] md:hidden flex flex-col font-semibold':'hidden'}>
+    <div className={nav?'text-black h-72 bg-[#e0dedb10] md:hidden flex flex-col font-semibold transition duration-500 ease-in-out':'hidden duration-500 ease-in-out'}>
      <a className='p-4 border-b-2 border-black' href="/">Home</a>
       <a className='p-4 border-b-2 border-black' href="/gallery">Gallery</a>
       <a  className='p-4 border-b-2 border-black ' href="/">About</a>
+      <a  className='p-4 border-b-2 border-black' href="https://www.instagram.com/westport_convenience/" target="_blank"><RiInstagramLine size={32}></RiInstagramLine></a>
     </div>
     </div>  
   )
