@@ -18,10 +18,10 @@ export default function Nav() {
       {/* vvv small screen nav*/}
       <button onClick={handleNav} className='md:hidden'><GiHamburgerMenu size={50}></GiHamburgerMenu></button>
     </div>  
-    <div className={nav?'text-black bg-gray-300 h-72 md:hidden':'hidden'}>
-     <a className='p-4' href="/">Home</a>
-      <a className='p-4' href="/gallery">Gallery</a>
-      <a  className='p-4' href="/">About</a>
+    <div className={nav?'text-black h-72 bg-[#e0dedb10] md:hidden flex flex-col font-semibold':'hidden'}>
+     <a className='p-4 border-b-2 border-black' ahref="/">Home</a>
+      <a className='p-4 border-b-2 border-black' href="/gallery">Gallery</a>
+      <a  className='p-4 border-b-2 border-black ' href="/">About</a>
     </div>
     </div>  
   )
