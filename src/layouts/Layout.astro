@@ -2,9 +2,9 @@
 import '../styles/global.css';
 import Nav from '../components/Nav';
 export interface Props{
-    title?:string;
+    title:string;
 }
-const {title= 'Home'}= Astro.props as Props;
+const {title}= Astro.props as Props;
 
 ---
 <!DOCTYPE html>
@@ -16,7 +16,7 @@ const {title= 'Home'}= Astro.props as Props;
     <title>{title}</title>
 </head>
 <body>
-    <Nav></Nav>
+    <Nav client:load></Nav>
     <slot></slot>
 </body>
 </html>
