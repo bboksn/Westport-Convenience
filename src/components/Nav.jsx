@@ -1,5 +1,6 @@
 import {React,useState} from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
+import {RiCloseFill} from 'react-icons/ri'
 import '../styles/fonts.css'
 export default function Nav() {
   const [nav,setNav] = useState(false);
@@ -16,10 +17,11 @@ export default function Nav() {
       <a  className='p-4' href="/">About</a>
       </div>  
       {/* vvv small screen nav*/}
-      <button onClick={handleNav} className='md:hidden'><GiHamburgerMenu size={50}></GiHamburgerMenu></button>
+      {!nav?<button onClick={handleNav} className='md:hidden'><GiHamburgerMenu size={50}></GiHamburgerMenu></button>:<button onClick={handleNav} className='md:hidden'><RiCloseFill color={'white'} size={60}></RiCloseFill></button>}
+      
     </div>  
     <div className={nav?'text-black h-72 bg-[#e0dedb10] md:hidden flex flex-col font-semibold':'hidden'}>
-     <a className='p-4 border-b-2 border-black' ahref="/">Home</a>
+     <a className='p-4 border-b-2 border-black' href="/">Home</a>
       <a className='p-4 border-b-2 border-black' href="/gallery">Gallery</a>
       <a  className='p-4 border-b-2 border-black ' href="/">About</a>
     </div>
