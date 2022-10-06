@@ -16,7 +16,7 @@ const {title}= Astro.props as Props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title}</title>
 </head>
-<body class="flex flex-col min-h-screen flex-grow">
+<body class="flex flex-col min-h-screen min-w-screen">
     <Nav client:load></Nav>
     <slot></slot>
     <Footer></Footer>

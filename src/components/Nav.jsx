@@ -14,7 +14,7 @@ export default function Nav() {
       <div className='hidden md:flex' >
       <a className='p-4' href="/">Home</a>
       <a className='p-4' href="/gallery">Gallery</a>
-      <a  className='p-4' href="/">About</a>
+      <a  className='p-4' href="/contact">Contact</a>
       <a  className='p-4' href="https://www.instagram.com/westport_convenience/" target="_blank"><RiInstagramLine size={30}></RiInstagramLine></a>
       </div>  
       {/* vvv small screen nav*/}
@@ -24,7 +24,7 @@ export default function Nav() {
     <div className={nav?'text-black h-72 bg-[#e0dedb10] md:hidden flex flex-col font-semibold transition duration-500 ease-in-out':'hidden duration-500 ease-in-out'}>
      <a className='p-4 border-b-2 border-black' href="/">Home</a>
       <a className='p-4 border-b-2 border-black' href="/gallery">Gallery</a>
-      <a  className='p-4 border-b-2 border-black ' href="/">About</a>
+      <a  className='p-4 border-b-2 border-black ' href="/contact">Contact</a>
       <a  className='p-4 border-b-2 border-black' href="https://www.instagram.com/westport_convenience/" target="_blank"><RiInstagramLine size={32}></RiInstagramLine></a>
     </div>
     </div>  
