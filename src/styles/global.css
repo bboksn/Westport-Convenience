@@ -1,3 +1,8 @@
 body {
     background-color: #F6F4F1;
+    flex-grow: 1;
+    background-image: url(../../public/PNGPIX-COM-Smoke-PNG-Transparent-Image-2.png);
+    background-repeat: no-repeat;
+    background-position-x:center;
+    background-attachment: fixed;
 }
