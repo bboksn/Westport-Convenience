@@ -1,10 +1,19 @@
 body {
     background-color: #F6F4F1;
     flex-grow: 1;
-    background-image: url(../../public/PNGPIX-COM-Smoke-PNG-Transparent-Image-2.png);
+    background-image: url(/PNGPIX-COM-Smoke-PNG-Transparent-Image-2.png);
     background-repeat: no-repeat;
     background-position-x:center;
     background-attachment: fixed;
     font-family: 'Times New Roman', Times, serif;
     color: #191b1e;
 }
+
+.slide-in-left {
+	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+ @-webkit-keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+ 
+
+
