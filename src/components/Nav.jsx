@@ -15,7 +15,6 @@ export default function Nav() {
       <div className='hidden lg:flex' >
       <a className='p-4' href="/">Home</a>
       <a className='p-4' href="/gallery">Gallery</a>
-      <a className='p-4' href="/#dir">Directions</a>
       <a  className='p-4' href="https://www.instagram.com/westport_convenience/" target="_blank"><RiInstagramLine size={38}></RiInstagramLine></a>
       </div>  
       {/* vvv small screen nav*/}
