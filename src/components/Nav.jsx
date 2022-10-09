@@ -10,7 +10,7 @@ export default function Nav() {
     {/*w-screen fixed */}
   return (
     <div className=''> 
-    <div className='flex bg-[#191b1e] h-24 text-white text-3xl flex-row items-center w-full mx-auto px-6 justify-between '>
+    <div className='flex bg-[#191b1e] h-24 text-white text-3xl flex-row items-center w-screen mx-auto px-6 justify-between '>
       <a className='font-bold text-4xl lg:text-5xl' href='/'>WESTPORT CONVENIENCE</a>
       <div className='hidden lg:flex' >
       <a className='p-4' href="/">Home</a>

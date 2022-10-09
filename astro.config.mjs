@@ -6,8 +6,5 @@ import image from "@astrojs/image";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), tailwind(), image()],
-  site:'https://bboksn.github.io/Westport-Convenience/',
-  base:'/Westport-Convenience'
-  
+  integrations: [react(), tailwind(), image()],  
 });
