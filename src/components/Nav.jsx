@@ -1,6 +1,6 @@
 import {React,useState} from 'react'
-import { GiHamburgerMenu} from "react-icons/gi";
-import {RiCloseFill,RiInstagramLine} from 'react-icons/ri'
+import { GiHamburgerMenu} from "../../node_modules/react-icons/gi";
+import {RiCloseFill,RiInstagramLine} from '../../node_modules/react-icons/ri'
 import '../styles/fonts.css'
 export default function Nav() {
   const [nav,setNav] = useState(false);
